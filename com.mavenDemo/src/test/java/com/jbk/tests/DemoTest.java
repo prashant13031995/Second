@@ -27,6 +27,21 @@ package com.jbk.tests;
 
 		}
 		
+		@Test
+		public void test0()
+		{
+			System.setProperty("webdriver.chrome.driver","c:/chromedriver.exe");
+					
+			driver = new ChromeDriver();
+			driver.get("file:///C://Users//HP//ojt//selenium%20ojt//Offline%20Website//Offline%20Website//index.html");
+			driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
+			driver.findElement(By.id("password")).sendKeys("123456");
+			driver.findElement(By.xpath("//button")).click();
+			Assert.assertEquals(driver.getTitle(),"JavaByKiran | Dashboard");
+
+
+		}
+		
 
 
 	}
