@@ -30,7 +30,7 @@ package com.jbk.tests;
 		@Test
 		public void test0()
 		{
-			System.setProperty("webdriver.chrome.driver","c:/driver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","c:/chromedriver.exe");
 					
 			driver = new ChromeDriver();
 			driver.get("file:///C://Users//HP//ojt//selenium%20ojt//Offline%20Website//Offline%20Website//index.html");
